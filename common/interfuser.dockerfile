@@ -11,8 +11,10 @@ WORKDIR /interfuser
 
 ARG INTERFUSER_COMMIT
 
-RUN git clone https://github.com/aasewold/InterFuser.git /interfuser \
-    && git checkout ${INTERFUSER_COMMIT}
+#RUN git clone https://github.com/StarRise24/InterFuser.git /interfuser \
+#    && git checkout ${INTERFUSER_COMMIT}
+
+COPY InterFuser /interfuser
 
 # Final image
 FROM nvidia/cuda:11.3.1-cudnn8-runtime-ubuntu18.04

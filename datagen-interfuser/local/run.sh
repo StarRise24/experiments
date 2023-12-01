@@ -4,7 +4,7 @@ set -euo pipefail
 
 source ../../common/utils.sh
 
-OUTPUT_DIR_ROOT=/nap02data/work/aasewold/datagen/interfuser
+OUTPUT_DIR_ROOT=/home/david/new/experiments/datagen-interfuser/local/data
 
 RESUME=${RESUME:-}
 NUM_JOBS=${NUM_JOBS:-3}
